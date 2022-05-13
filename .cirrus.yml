@@ -1,0 +1,34 @@
+env:
+    # RECOVERY REPOSITORY SOURCE TWRP,PBRP,SHRP
+    MANIFEST: --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0 --groups=all,-notdefault,-device,-darwin,-x86,-mips
+
+    # Config
+    CONFIG: config.sh
+
+    # Telegram
+    TG_CHAT_ID: -661236583
+    TG_TOKEN: 5192972460:AAH7m8mkkEk60SyTqcMnmaKDtfb1uKt5WnE
+
+    # Cirrus Specific Vars (Do *NOT* Change)
+    CIRRUS_SHELL: bash
+
+task:
+  name: "Recovery Build"
+  timeout_in: 120m
+  container:
+      image: ghcr.io/sushrut1101/docker:latest
+      cpu: 20
+      memory: 32G
+
+  Checks_script:
+      - curl -sL https://raw.githubusercontent.com/algokidd/pbrp_ci/main/scripts/checks.sh | bash
+
+  Sync_script:
+      - curl -sL https://raw.githubusercontent.com/algokidd/pbrp_ci/main/scripts/sync.sh | bash
+
+  Build_script:
+      - curl -sL https://raw.githubusercontent.com/algokidd/pbrp_ci/main/scripts/build.sh | bash
+
+  Upload_script:
+      - export TIMEOUT=43200 # Link timeout (in minutes)
+      - curl https://raw.githubusercontent.com/algokidd/pbrp_ci/main/scripts/upload.sh | bash
