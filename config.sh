@@ -6,8 +6,8 @@ export DT_LINK="https://github.com/algokidd/PBRP-RMX2117"
 export DEVICE="RMX2117"
 export OEM="realme"
 export TARGET="recoveryimage"
-DATE_L=$(date +%d\ %B\ %Y)
-export OUTPUT="RMX2117-PBRP-${DATE_L}.img"
+
+export OUTPUT="recovery.img"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.
