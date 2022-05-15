@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/algokidd/rmx2117_pbrp"
+export DT_LINK="https://github.com/algokidd/PBRP-RMX2117"
 
 export DEVICE="RMX2117"
 export OEM="realme"
 export TARGET="recoveryimage"
-
-export OUTPUT="recovery.img"
+DATE_L=$(date +%d\ %B\ %Y)
+export OUTPUT="RMX2117-PBRP-${DATE_L}.img"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.
