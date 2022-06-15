@@ -23,7 +23,7 @@ repo init --depth=1 -u $MANIFEST
 cd ~/twrp
 
 # Sync the Sources
-repo sync 
+repo sync || { echo "ERROR: Failed to TWRP source!" && exit 1; }
 
 # Clone Trees
 git clone $DT_LINK $DT_PATH || { echo "ERROR: Failed to Clone the Device Trees!" && exit 1; }
