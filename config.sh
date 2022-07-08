@@ -1,18 +1,18 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/algokidd/pbrp-test"
+export DT_LINK="https://github.com/OrangeFoxRecovery/device_xiaomi_mojito.git"
 
-export DEVICE="RMX2117"
-export OEM="realme"
-export TARGET="recoveryimage"
+export DEVICE="mojito"
+export OEM="xiaomi"
+export TARGET="bootimage"
 
-export OUTPUT="recovery.img"
+export OUTPUT="pbrp.zip"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.
 #export KERNEL_SOURCE="https://gitlab.com/OrangeFox/kernel/mojito.git"
-#export PLATFORM="sm6150" # Leave it commented if you want to clone the kernel to kernel/$OEM/$DEVICE
+#export PLATFORM="sdm678" # Leave it commented if you want to clone the kernel to kernel/$OEM/$DEVICE
 
 # Extra Command
 #export EXTRA_CMD="git clone https://github.com/OrangeFoxRecovery/Avatar.git misc"
