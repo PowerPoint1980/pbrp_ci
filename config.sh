@@ -7,7 +7,7 @@ export DEVICE="mojito"
 export OEM="xiaomi"
 export TARGET="bootimage"
 
-export OUTPUT="pbrp.zip"
+export OUTPUT="output.zip"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.
