@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/OrangeFoxRecovery/device_xiaomi_mojito.git"
+export DT_LINK="https://github.com/SHRP-Devices/device_samsung_hero2lte"
 
-export DEVICE="mojito"
-export OEM="xiaomi"
-export TARGET="bootimage"
+export DEVICE="hero2lte"
+export OEM="samsung"
+export TARGET="recoveryimage"
 
 export OUTPUT="output.zip"
 
