@@ -1,6 +1,6 @@
 env:
     # RECOVERY REPOSITORY SOURCE TWRP,PBRP,SHRP
-    MANIFEST: --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-11.0
+    MANIFEST: --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-12.1
 
     # Config
     CONFIG: config.sh
